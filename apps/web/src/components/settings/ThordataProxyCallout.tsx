@@ -1,45 +1,11 @@
 'use client';
 
 import { useEffect, useState } from 'react';
-import { Cancel01Icon, Copy01Icon, CheckmarkCircle02Icon, LinkSquare01Icon } from '@hugeicons/core-free-icons';
+import { Cancel01Icon, LinkSquare01Icon } from '@hugeicons/core-free-icons';
 import { HugeiconsIcon } from '@hugeicons/react';
-import { cn } from '@/lib/utils';
 
 const DISMISS_KEY = 'headlessx-thordata-callout-dismissed';
 const THORDATA_URL = 'https://dashboard.thordata.com/register?invitation_code=HQIUNLWP';
-
-const PROMO_CODES = [{ code: 'HQIUNLWP', label: 'Invitation code · 3-day free trial' }] as const;
-
-function PromoCodePill({ code, label }: { code: string; label: string }) {
-    const [copied, setCopied] = useState(false);
-
-    const handleCopy = async () => {
-        await navigator.clipboard.writeText(code);
-        setCopied(true);
-        setTimeout(() => setCopied(false), 2000);
-    };
-
-    return (
-        <button
-            type="button"
-            onClick={() => {
-                void handleCopy();
-            }}
-            className="group flex w-full items-center justify-between gap-3 rounded-xl border border-slate-200 bg-white px-4 py-3 text-left transition-colors hover:border-violet-200 hover:bg-violet-50/40"
-            title={`Copy ${code}`}
-        >
-            <div className="min-w-0">
-                <div className="font-mono text-sm font-semibold text-slate-900">{code}</div>
-                <div className="mt-0.5 text-xs text-slate-500">{label}</div>
-            </div>
-            <HugeiconsIcon
-                icon={copied ? CheckmarkCircle02Icon : Copy01Icon}
-                size={16}
-                className={cn('shrink-0', copied ? 'text-emerald-500' : 'text-slate-400 group-hover:text-violet-600')}
-            />
-        </button>
-    );
-}
 
 export function ThordataProxyCallout() {
     const [dismissed, setDismissed] = useState(true);
@@ -84,12 +50,7 @@ export function ThordataProxyCallout() {
                             rotating and sticky sessions, and 99.99% uptime — built for headless browsers, scraping
                             tools, and AI workflows.
                         </p>
-                    </div>
-
-                    <div className="grid gap-2 sm:grid-cols-2">
-                        {PROMO_CODES.map((promo) => (
-                            <PromoCodePill key={promo.code} code={promo.code} label={promo.label} />
-                        ))}
+                        <p className="mt-2 text-sm font-medium text-violet-900">3-day free trial · 10% off</p>
                     </div>
 
                     <a
@@ -98,7 +59,7 @@ export function ThordataProxyCallout() {
                         rel="noreferrer"
                         className="inline-flex items-center gap-1.5 text-sm font-semibold text-violet-800 transition-colors hover:text-violet-900"
                     >
-                        Try Thordata free for 3 days
+                        Try Thordata now
                         <HugeiconsIcon icon={LinkSquare01Icon} size={14} />
                     </a>
                 </div>
