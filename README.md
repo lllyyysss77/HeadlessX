@@ -25,7 +25,7 @@
 
 I'm working on HeadlessX v2.5. I know the current dashboard and a lot of the system need a real redesign — cleaner UI, better UX, and a setup that actually fits how people use this with agents. That's what I'm building now.
 
-v2.1.2 is still what you run today. v2.5 will replace the playground-style UI, add a proper agent chat, and a live interact session with **KasmVNC** embedded in the dashboard so keyboard and mouse go into the real browser window. Postgres will ship in Docker only (no Supabase). CLI setup will be two modes — **`developer`** (apps on the host, Postgres/Redis in Docker) and **`production`** (full stack in Docker + Caddy/domains). `self-host` goes away. Watch this repo and the releases; I'll post there when it's ready to try.
+v2.1.2 is still what you run today. v2.5 will replace the playground-style UI and add a proper agent chat that calls operators. Live agentic browser sessions and taught recipes stay in **Helium CLI** — HeadlessX will not ship Interact or YAML workflows. Headed operator work (Google cookie setup, later logins) will still embed **KasmVNC** in the dashboard so keyboard and mouse go into the real browser window. Postgres will ship in Docker only (no Supabase). Platform install will be **`headlessx-setup`**: pick self-host or VPS, auto-detect OS (self-host on Linux/macOS/Windows; VPS Linux only), check Docker/npm/Bun, then on VPS validate DNS before start and print the Dashboard/API links. There is no developer mode. Watch this repo and the releases; I'll post there when it's ready to try.
 
 I'm evaluating anti-detect tests between [Camoufox](https://camoufox.com/) and [CloakBrowser](https://github.com/CloakHQ/CloakBrowser). HeadlessX will use whichever scores higher — Camoufox (Firefox, C++ fingerprint patches) or CloakBrowser (Chromium, C++ fingerprint patches).
 
@@ -73,7 +73,7 @@ Important operator setup notes:
 
 ## Sponsors
 
-I'm thankful to the people and companies who support HeadlessX. BirdProxies, Swiftproxy, NodeMaven, and Mango Proxy have been solid partners — that support is a big part of why this project can keep moving. If you need proxies for scraping or automation, start with them.
+I'm thankful to the people and companies who support HeadlessX. BirdProxies, Swiftproxy, NodeMaven, Mango Proxy, and Thordata have been solid partners — that support is a big part of why this project can keep moving. If you need proxies for scraping or automation, start with them.
 
 <details open>
 <summary>View</summary>
@@ -85,23 +85,29 @@ I'm thankful to the people and companies who support HeadlessX. BirdProxies, Swi
         <img src="assets/bird-proxy.png" alt="BirdProxies banner" width="420" />
       </a>
     </td>
-    <td valign="top">
+    <td valign="middle">
       Hey, we built <a href="https://birdproxies.com/t/headlessx">BirdProxies</a> because proxies shouldn't be complicated or overpriced. Fast residential and ISP proxies in 195+ locations, fair pricing, and real support. Try our FlappyBird game on the landing page for free data!
-      <br />
+      <br /><br />
       <a href="https://birdproxies.com/t/headlessx"><strong>Try BirdProxies now</strong></a> &nbsp;|&nbsp; <a href="https://discord.com/invite/birdproxies"><strong>Join the Discord</strong></a>
     </td>
   </tr>
   <tr>
+    <td colspan="2"><hr /></td>
+  </tr>
+  <tr>
+    <td valign="middle">
+      <strong>Swiftproxy</strong> — Reliable residential proxies optimized for HeadlessX automation and anti-bot workflows. Access 80M+ rotating residential IPs across 190+ countries with non-expiring traffic, high anonymity, sticky sessions, and free trials. Get 10% off with code <strong>PROXY90</strong>.
+      <br /><br />
+      <a href="https://www.swiftproxy.net/?ref=HeadlessX"><strong>Try Swiftproxy now</strong></a> &nbsp;|&nbsp; <a href="https://t.me/Swiftproxy_Support"><strong>Contact us</strong></a>
+    </td>
     <td width="440" align="center" valign="middle">
       <a href="https://www.swiftproxy.net/?ref=HeadlessX">
         <img src="assets/swiftproxy.png" alt="Swiftproxy banner" width="420" />
       </a>
     </td>
-    <td valign="top">
-      <strong>Swiftproxy</strong> — Reliable residential proxies optimized for HeadlessX automation and anti-bot workflows. Access 80M+ rotating residential IPs across 190+ countries with non-expiring traffic, high anonymity, sticky sessions, and free trials. Get 10% off with code <strong>PROXY90</strong>.
-      <br />
-      <a href="https://www.swiftproxy.net/?ref=HeadlessX"><strong>Try Swiftproxy now</strong></a> &nbsp;|&nbsp; <a href="https://t.me/Swiftproxy_Support"><strong>Contact us</strong></a>
-    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><hr /></td>
   </tr>
   <tr>
     <td width="440" align="center" valign="middle">
@@ -109,22 +115,40 @@ I'm thankful to the people and companies who support HeadlessX. BirdProxies, Swi
         <img src="assets/nodemaven-banner.png" alt="NodeMaven banner" width="420" />
       </a>
     </td>
-    <td valign="top">
+    <td valign="middle">
       <strong>NodeMaven</strong> — The most reliable proxy provider with the highest quality IP on the market. Best for automation, web scraping, SEO research, and social media management. 99.9% uptime, sticky sessions up to 7 days, fraud score &lt;97%, no KYC. Use <strong>HEADLESSX35</strong> for 35% off Mobile/Residential or <strong>HEADLESSX40</strong> for 40% off ISP proxies.
-      <br />
+      <br /><br />
       <a href="https://go.nodemaven.com/Saifyxproread"><strong>Try NodeMaven now</strong></a>
     </td>
   </tr>
   <tr>
+    <td colspan="2"><hr /></td>
+  </tr>
+  <tr>
+    <td valign="middle">
+      <strong>Mango Proxy</strong> — Residential, ISP, datacenter, and mobile proxies for automation, web scraping, SEO, social media management, and other online tasks. HTTP(S) and SOCKS5, rotating and static. Use <strong>SAIFYXPRO</strong> for 8% off Static ISP Proxies.
+      <br /><br />
+      <a href="https://mangoproxy.com/prod-isp-static/?utm_source=saifyxpro&utm_medium=partner&utm_campaign=saifyxpro_github"><strong>Try Mango Proxy now</strong></a>
+    </td>
     <td width="440" align="center" valign="middle">
       <a href="https://mangoproxy.com/prod-isp-static/?utm_source=saifyxpro&utm_medium=partner&utm_campaign=saifyxpro_github">
         <img src="assets/mangoproxy-banner.png" alt="Mango Proxy banner" width="420" />
       </a>
     </td>
-    <td valign="top">
-      <strong>Mango Proxy</strong> — Residential, ISP, datacenter, and mobile proxies for automation, web scraping, SEO, social media management, and other online tasks. HTTP(S) and SOCKS5, rotating and static. Use <strong>SAIFYXPRO</strong> for 8% off Static ISP Proxies.
-      <br />
-      <a href="https://mangoproxy.com/prod-isp-static/?utm_source=saifyxpro&utm_medium=partner&utm_campaign=saifyxpro_github"><strong>Try Mango Proxy now</strong></a>
+  </tr>
+  <tr>
+    <td colspan="2"><hr /></td>
+  </tr>
+  <tr>
+    <td width="440" align="center" valign="middle">
+      <a href="https://dashboard.thordata.com/register?invitation_code=HQIUNLWP">
+        <img src="assets/thordata-banner.jpeg" alt="Thordata banner" width="420" />
+      </a>
+    </td>
+    <td valign="middle">
+      <strong>Thordata</strong> — Premium residential proxies with 100M+ real IPs across 195+ countries, geo targeting, 99.99% uptime, and rotating &amp; sticky sessions. Built for headless browsers, scraping tools, and AI workflows so your HeadlessX jobs look like real users. 3-day free trial. Use <strong>HeadlessX</strong> for 10% off.
+      <br /><br />
+      <a href="https://dashboard.thordata.com/register?invitation_code=HQIUNLWP"><strong>Try Thordata now</strong></a>
     </td>
   </tr>
 </table>
