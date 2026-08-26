@@ -8,7 +8,7 @@ import { cn } from '@/lib/utils';
 const DISMISS_KEY = 'headlessx-thordata-callout-dismissed';
 const THORDATA_URL = 'https://dashboard.thordata.com/register?invitation_code=HQIUNLWP';
 
-const PROMO_CODES = [{ code: 'HeadlessX', label: '10% off · 3-day free trial' }] as const;
+const PROMO_CODES = [{ code: 'HQIUNLWP', label: 'Invitation code · 3-day free trial' }] as const;
 
 function PromoCodePill({ code, label }: { code: string; label: string }) {
     const [copied, setCopied] = useState(false);

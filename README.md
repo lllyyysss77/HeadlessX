@@ -146,7 +146,7 @@ I'm thankful to the people and companies who support HeadlessX. BirdProxies, Swi
       </a>
     </td>
     <td valign="middle">
-      <strong>Thordata</strong> — Premium residential proxies with 100M+ real IPs across 195+ countries, geo targeting, 99.99% uptime, and rotating &amp; sticky sessions. Built for headless browsers, scraping tools, and AI workflows so your HeadlessX jobs look like real users. 3-day free trial. Use <strong>HeadlessX</strong> for 10% off.
+      <strong>Thordata</strong> — Premium residential proxies with 100M+ real IPs across 195+ countries, geo targeting, 99.99% uptime, and rotating &amp; sticky sessions. Built for headless browsers, scraping tools, and AI workflows so your HeadlessX jobs look like real users. 3-day free trial. Invitation code <strong>HQIUNLWP</strong>.
       <br /><br />
       <a href="https://dashboard.thordata.com/register?invitation_code=HQIUNLWP"><strong>Try Thordata now</strong></a>
     </td>
