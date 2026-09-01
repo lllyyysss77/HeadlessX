@@ -111,14 +111,28 @@ I'm thankful to the people and companies who support HeadlessX. BirdProxies, Swi
   </tr>
   <tr>
     <td width="440" align="center" valign="middle">
-      <a href="https://go.nodemaven.com/Saifyxproread">
-        <img src="assets/nodemaven-banner.png" alt="NodeMaven banner" width="420" />
+      <a href="https://go.nodemaven.com/Saifyxproreadmeaugust">
+        <img src="assets/nodemaven-banner.png" alt="NodeMaven — Best proxy for web scraping and automation with the highest quality IP" width="420" />
       </a>
     </td>
     <td valign="middle">
-      <strong>NodeMaven</strong> — The most reliable proxy provider with the highest quality IP on the market. Best for automation, web scraping, SEO research, and social media management. 99.9% uptime, sticky sessions up to 7 days, fraud score &lt;97%, no KYC. Use <strong>HEADLESSX35</strong> for 35% off Mobile/Residential or <strong>HEADLESSX40</strong> for 40% off ISP proxies.
+      <a href="https://go.nodemaven.com/Saifyxproreadmeaugust"><strong>NodeMaven</strong></a> — The most efficient proxy provider for Web Scraping and Automation with the Highest Quality IP on the market.
       <br /><br />
-      <a href="https://go.nodemaven.com/Saifyxproread"><strong>Try NodeMaven now</strong></a>
+      <strong>Why <a href="https://go.nodemaven.com/Saifyxproreadmeaugust">NodeMaven</a>?</strong>
+      <ul>
+        <li>ZIP targeting</li>
+        <li>99.9% uptime</li>
+        <li>IP filtering: all proxies have fraud score &lt;97%</li>
+        <li>No KYC required</li>
+        <li>Unique free tools: Proxy Bandwidth Checker, Meta Tag Checker, IP Lookup and others!</li>
+      </ul>
+      Special codes for HeadlessX users:
+      <br />
+      <strong>HEADLESSX35</strong> — 35% off Mobile and Residential Proxies
+      <br />
+      <strong>HEADLESSX40</strong> — 40% off ISP (Static) Proxies
+      <br /><br />
+      <a href="https://go.nodemaven.com/Saifyxproreadmeaugust"><strong>Try NodeMaven now</strong></a>
     </td>
   </tr>
   <tr>

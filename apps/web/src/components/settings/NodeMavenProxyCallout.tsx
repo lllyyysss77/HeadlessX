@@ -6,7 +6,7 @@ import { HugeiconsIcon } from '@hugeicons/react';
 import { cn } from '@/lib/utils';
 
 const DISMISS_KEY = 'headlessx-nodemaven-callout-dismissed';
-const NODEMAVEN_URL = 'https://go.nodemaven.com/Saifyxprotool';
+const NODEMAVEN_URL = 'https://go.nodemaven.com/Saifyxprotoolsugust';
 
 const PROMO_CODES = [
     { code: 'HEADLESSX35', label: '35% off Mobile & Residential' },
@@ -83,7 +83,7 @@ export function NodeMavenProxyCallout() {
                             Recommended provider
                         </div>
                         <p className="mt-2 text-sm leading-6 text-slate-600">
-                            NodeMaven offers residential, mobile, and ISP proxies with 99.9% uptime, sticky sessions up to 7 days, and IPs filtered to fraud score &lt;97%. No KYC required.
+                            NodeMaven is the most efficient proxy provider for web scraping and automation, with the highest quality IP on the market. ZIP targeting, 99.9% uptime, fraud score &lt;97%, no KYC, plus free tools (Proxy Bandwidth Checker, Meta Tag Checker, IP Lookup).
                         </p>
                     </div>
 
